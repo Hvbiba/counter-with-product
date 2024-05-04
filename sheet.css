@@ -1,0 +1,328 @@
+#homePage{
+    font-family: Helvetica, Helvetica Neue, Arial, Lucida Grande, sans-serif;
+    color: #3a3a3a;
+}
+#topbar{
+    display: flex; flex-direction: row;
+    justify-content: space-between; align-items: center;
+}
+#topbar #logo{
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 410px;
+}
+#topbar #icons {
+    display: flex;  
+    margin-left: 300px;
+}
+#topbar #icons i ,#topbar #icons a , #topbar #icons a:hover {
+    font-size: 25px;
+    padding: 7px;
+    cursor: pointer;
+    color: #3a3a3a;
+}
+.nav-link ,.nav-link:hover  {
+    color: #3a3a3a;
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    text-decoration: underline 1px  #3a3a3a;
+    transition: 3ms ease-in-out;
+}
+#homeContent {
+    background-image:url('background.webp');
+    width: 100%; height: 82vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#homeContent div{
+ float: right;
+padding: 160px ;
+font-weight: 600;
+}
+#homeContent h1 {
+    letter-spacing: 5px;
+}
+@media (max-width: 576px){
+    #topbar #logo {
+    margin-right: 215px;
+
+ }
+ #topbar #icons {
+    margin: 0px;
+ }
+ #topbar #closebar{
+    float: right;
+    text-align: right;
+    font-size: 30px;
+ }
+ #homeContent div{
+    float: center;
+   padding:150px 30px 20px 30px;
+   }
+   #homeContent {
+    background-position: left;
+}
+}
+#sections , #items , #sectionbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sections .card , #sectionbottom .card{ 
+margin: 20px 5px 20px 30px;
+}
+/* items in men a7 women sections*/
+#items {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+}
+.card img {
+    background-color: #b5b5b5;
+}
+h4{
+    letter-spacing: 2px;
+    font-size:20px;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+.card li {
+    font-weight: bold;
+}
+#items .card:hover{
+    box-shadow: 7px 7px 3px 3px#b5b5b5 ;
+}
+#footer{
+    background-color: #b5b5b5;
+    display: flex;
+}
+@media (max-width: 576px){
+    #sections , #items{
+        flex-wrap: wrap;
+    }
+    #footer img {
+       width: 50px;
+       margin: 7px;
+       flex-wrap: nowrap;
+    }
+    #sectionbottom {
+        flex-wrap: wrap;
+    }
+}
+/* log in page style*/
+#login , #sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; 
+    background-color: #b5b5b5;
+    border-radius: 40px;
+    width: 50%; height: 430px;
+    margin-top: 20px ;
+   margin-bottom: 51px;
+   padding: 15px;
+}
+#sign{
+    width: 55%; height: 460px;
+    margin-top: 5px ;
+   margin-bottom: 10px;
+   padding: 15px;
+}
+form{
+    padding-top: 20px;
+}
+#login form input ,#sign form input  {
+    display: block;
+    width: 480px;
+    height: 40px;
+    margin: 10px; margin-bottom: 7px;
+    padding: 10px;
+}
+#login form .btn , #sign form .btn  {
+    width: 250px;
+    height: 55px;
+    padding: 5px;
+    margin: 10px;
+}
+form pre{
+    font-family: sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+}
+form p {
+    text-align: left;
+    display: none;
+}
+@media (max-width: 576px){
+    #login{
+        width: 90%; height: 500px;
+        margin: 20px 0px 20px 17px;
+       padding: 10px 0px 20px 10px;
+    }
+    #sign{
+        width: 93%; height: 500px;
+        margin: 10px 0px 20px 10px; 
+    }
+    form{
+        padding: 10px;
+        padding-top: 25px;
+    }
+    #login form input  {
+        display: block;
+        width: 260px;
+        height: 40px;
+        margin: 20px 0px 20px 10px; 
+        padding: 4px;
+    }
+    #sign form input {
+        display: block;
+        width: 268px;
+        height: 40px;
+        margin: 10px 0px 5px 23px; 
+        padding: 5px;
+    }
+    #login form .btn  {
+        width: 200px;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #sign form .btn {
+        width: 190px;
+        height: 45px;
+        padding: 5px;
+        margin: 10px;
+    }
+   #sign form pre{
+        font-size: 16px;
+        padding: 10px; padding-top:0px ;
+    }
+}
+.pRed{ /* form add class*/
+    text-align: left;
+    display: block;
+    color: red;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+/* style men and women section*/
+#headline {
+    background-color: #685f58;
+    color: white; font-size: 40px;
+    width: 100%;
+    height: 100px;
+    padding:25px 0px 0px 20px ;
+    margin-top: 7px;
+}
+#content #items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 0px 10px 100px;
+}
+#content #items  .card{
+    margin: 10px;
+} 
+@media (max-width: 576px){
+    #content #items {
+        grid-template-columns: repeat(1, 2fr);
+         margin: 20px 0px 10px 0px;
+    }
+    #content #items  .card{
+        margin: 10px 0px 7px 20px;
+    }
+
+}
+/* style custom product page*/
+#contentText{
+    display: flex;
+    flex-direction: column;
+}
+#showProduct{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#showProduct img {
+    background-color:rgb(246, 246, 246);
+}
+#contentText .price {
+ font-size: 18px;
+ font-weight: bold;
+}
+#contentText input, #contentText #btn{
+    cursor: pointer;
+}
+#contentText input{
+    width: 70px;
+    margin: 7px 0px 0px 0px;
+}
+#contentText #btn{
+    margin: 20px; margin-left: 0px;
+}
+.SizeColor button{
+    margin: 5px;
+    cursor: pointer;
+}
+.p{
+    padding: 10px;
+}
+#gallery{
+    display: flex;
+    justify-content: space-between;
+}
+#gallery #small img{
+    display: block;
+    margin: 20px;
+}
+@media (max-width: 576px){
+    #contentText{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    #showProduct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contentText .price {
+        font-size: 15px;
+        font-weight: bold;
+       }
+    #gallery{
+        flex-direction: column-reverse;
+    }
+    #gallery #small{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+    #btn{
+        width: 280px;
+        height: 50px;
+    }
+    .SizeColor button{
+        margin: 5px;
+    }
+    #main{
+        padding: 5px;
+        padding-right: 0px;
+    }
+    #womenconverse{
+        width: 300px;
+        padding: 10px;
+    }
+}
+#counter label ,#counter i {
+    font-size: 20px;
+    padding: 10px 10px 10px 30px;
+}
+#counter{
+    background-color: #eee;
+    width: 200px;
+}

@@ -13,15 +13,15 @@ let greenbtn=document.getElementById('green');
 let blackbtn=document.getElementById('black');
 let pinkbtn=document.getElementById('pink');
 greenbtn.addEventListener('click', function(){
-    img.src= "plv1737-Green-single.png";
+    img.src= "greenshirt.jpg";
     console.log('green changed');
 });
 blackbtn.addEventListener('click', function(){
-    img.src= "plv3573-Black-single.png";
+    img.src= "blackshirt.jpg";
     console.log('black changed');
 });
 pinkbtn.addEventListener('click', function(){
-    img.src= "plv3753-Pink-single.png";
+    img.src= "pinkshirt.jpg";
     console.log('pink changed');
 });
 // counter code
